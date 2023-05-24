@@ -4,6 +4,7 @@ import { ButtonIcon } from "@components/ButtonIcon";
 import { Input } from "@components/Input";
 
 import { Container, Form } from "./styles";
+import { Filter } from "@components/Filter";
 
 export function Players() {
   return (
@@ -20,6 +21,8 @@ export function Players() {
 
         <ButtonIcon icon="add" />
       </Form>
+
+      <Filter title="Time A" />
     </Container>
   );
 }

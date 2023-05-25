@@ -24,6 +24,6 @@ export async function playerAddByGroup(
 
     await AsyncStorage.setItem(`${PLAYER_COLLECTION}-${group}`, storage);
   } catch (error) {
-    console.log(error);
+    throw error;
   }
 }
